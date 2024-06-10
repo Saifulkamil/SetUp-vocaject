@@ -18,7 +18,7 @@ sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=compose
 sudo apt install mariadb-server
 sudo apt install php8.2-curl php8.2-xml php8.2-dom php8.2-mysql
 
-sudo mysql -u root -e "create database vocaject; use vocaject; source db_vocaject_prod.sql; CREATE USER 'vocaject'@'localhost' IDENTIFIED BY '123'; GRANT ALL PRIVILEGES ON _ . _ TO 'vocaject'@'localhost'; FLUSH PRIVILEGES;"
+sudo mysql -u root -e "create database vocaject; use vocaject; source db*vocaject_prod.sql; CREATE USER 'vocaject'@'localhost' IDENTIFIED BY '123'; GRANT ALL PRIVILEGES ON * . \_ TO 'vocaject'@'localhost'; FLUSH PRIVILEGES;"
 
 composer install --ignore-platform-req=ext-curl --ignore-platform-req=ext-dom --ignore-platform-req=ext-xml
 
@@ -47,7 +47,7 @@ sudo apt-get install -y php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-
 
 sudo apt install php8.2-curl php8.1-xml php8.2-dom php8.2-mysql
 
-sudo mysql -u root -e "create database vocaject; use vocaject; source db_vocaject_prod.sql; CREATE USER 'vocaject'@'localhost' IDENTIFIED BY '123'; GRANT ALL PRIVILEGES ON _ . _ TO 'vocaject'@'localhost'; FLUSH PRIVILEGES;
+sudo mysql -u root -e "create database vocaject; use vocaject; source db*vocaject_prod.sql; CREATE USER 'vocaject'@'localhost' IDENTIFIED BY '123'; GRANT ALL PRIVILEGES ON * . \_ TO 'vocaject'@'localhost'; FLUSH PRIVILEGES;
 
 composer install --ignore-platform-req=ext-curl --ignore-platform-req=ext-dom --ignore-platform-req=ext-xml
 
